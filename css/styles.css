@@ -1,0 +1,15 @@
+img#lucy, img#bowie {
+  display: none;
+}
+
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  width: 100%;
+  background-color: green;
+  padding-top: 10px;
+}
