@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <form name="orderform">
+        Which one is your favorite?<br>
+        <input type="radio" name="music" value="Rock"
+        checked="checked"> Rock<br>
+        <input type="radio" name="music" value="Reggae"> Reggae<br>
+        <input type="radio" name="music" value="Pop"> Pop<br>
+        <input type="radio" name="music" value="Rap"> Rap<br>
+        <input type="radio" name="music" value="Metal"> Metal<br>
+        <input type="submit" onclick="get_radio_value()">
+      </form>
+    </div>
+
+
+    <script type="text/javascript">
+
+    function get_radio_value()
+    {
+    for (var i=0; i < document.orderform.music.length; i++)
+       {
+       if (document.orderform.music[i].checked)
+          {
+          var rad_val = document.orderform.music[i].value;
+          alert(rad_val);
+          }
+       }
+    }
+
+    //-->
+    </script>
